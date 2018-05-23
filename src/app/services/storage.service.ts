@@ -100,7 +100,7 @@ export class StorageService {
   checkEmptyTasksList(list): void {
 
     this.isEmptyTasksList = this._functionsService.checkEmptyTasksList(list);
-    this.isNotUniqueName = this._functionsService.checkUniqueMessageNecessity(this.isEmptyTasksList, this.isNotUniqueName)
+    this.isNotUniqueName = this._functionsService.checkListContent(this.isEmptyTasksList, this.isNotUniqueName)
 
   }
 

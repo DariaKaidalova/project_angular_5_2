@@ -136,7 +136,7 @@ export class FunctionsService {
 
   }
 
-  checkUniqueMessageNecessity(isEmptyList, isNotUniqueName) {
+  checkListContent(isEmptyList, isNotUniqueName) {
 
     if(!isEmptyList) {
       return isNotUniqueName

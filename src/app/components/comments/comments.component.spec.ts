@@ -20,7 +20,7 @@ class CommentsComponentPageObject {
 }
 
 
-describe('Comments component:', () => {
+describe('Comments component', () => {
 
   let fixture: ComponentFixture<CommentsComponent>;
   let subject: CommentsComponent;
