@@ -11,14 +11,6 @@ export class MockRestService {
 
   constructor (private _http: HttpClient) {}
 
-  getJSON(): Observable<any> {
-
-    return this._http.get(this._urlDB)
-      .map((result: any) => { return result })
-        .catch((error:any) => Observable.throw(error.error || 'Load json error'));
-
-  }
-
   setLocalStorageItems (itemsTitle: string, items: Array<Task>): void {
 
     localStorage.removeItem(itemsTitle);

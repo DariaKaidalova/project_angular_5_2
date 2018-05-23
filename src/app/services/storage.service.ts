@@ -19,22 +19,13 @@ export class StorageService {
   loadTasksList(): void {
 
     if(!this._mockRestService.getLocalStorageItems('tasksList')) {
-      this._mockRestService.getJSON().subscribe(
-        items => {
-          this.setList(items.tasksList);
-          this.getList();
-          this.setActiveTaskItem(this.activeTaskItemId);
-          this.checkEmptyTasksList(this.tasksList);
-        },
-        err => { console.error(err); console.error('cannot GET data from the database'); }
-      );
+      this.setList(this.tasksList);
     }
-    else {
-      this.getList();
-      this.setActiveTaskItem(this.activeTaskItemId);
-      this.checkEmptyTasksList(this.tasksList);
-    }
-
+      
+    this.getList();
+    this.setActiveTaskItem(this.activeTaskItemId);
+    this.checkEmptyTasksList(this.tasksList);
+   
   }
 
   deleteTaskItem(id: string): void {
