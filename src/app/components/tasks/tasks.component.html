@@ -1,0 +1,21 @@
+<div class="l-tasks">
+  <div class="b-tasks">
+    <div class="b-tasks__title">
+      <h2 class="b-title">Items</h2>
+    </div>
+    <div class="b-tasks__form">
+      <app-tasks-form-adding 
+        (submitAction)="addItem($event[0], $event[1])"
+        [isNotUniqueName]="isNotUniqueName"></app-tasks-form-adding>
+    </div>
+    <div class="b-tasks__list">
+      <div class="b-message" *ngIf="isEmptyTasksList">There are no tasks</div>
+      <app-tasks-list *ngIf="!isEmptyTasksList"
+        [list]="list" 
+        (deleteAction)="deleteItem($event)" 
+        (activeAction)="activeItem($event)" 
+        [activeId]="activeId"></app-tasks-list>
+    </div>
+  </div>
+</div>
+

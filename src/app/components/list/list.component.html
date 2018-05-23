@@ -1,0 +1,21 @@
+<div class="l-list">
+	<ul class="b-list">
+		<li class="b-list__item">
+			<app-tasks 
+				[isEmptyTasksList]="_storageService.isEmptyTasksList" 
+				[list]="_storageService.tasksList" 
+				(deleteAction)="deleteTaskItem($event)" 
+				(activeAction)="activeTaskItem($event)" 
+				(submitAction)="addTaskItem($event[0], $event[1])"
+				[activeId]="_storageService.activeTaskItemId"
+				[isNotUniqueName]="_storageService.isNotUniqueName"></app-tasks>
+		</li>
+		<li class="b-list__item -type_comments">
+			<app-comments
+				[isEmptyTasksList]="_storageService.isEmptyTasksList"
+				[taskNumber]="_storageService.activeTaskItemId" 
+				[list]="_storageService.commentsList" 
+				(submitAction)="addCommentItem($event[0], $event[1])"></app-comments>
+		</li>
+	</ul>
+</div>

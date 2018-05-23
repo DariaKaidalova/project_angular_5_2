@@ -1,0 +1,15 @@
+/* title */
+
+.b-title {
+	margin: 0 0 10px;
+	color: $color-4;
+	font-weight: 300;
+	font-size: 36px;
+
+	.b-comments__title &, .b-tasks__title & {
+		margin: 0;
+	}
+}
+
+
+

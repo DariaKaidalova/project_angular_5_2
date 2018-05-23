@@ -1,0 +1,13 @@
+<div class="l-comments">
+  <div class="b-comments">
+    <div class="b-comments__title">
+      <h2 class="b-title">Comments <span *ngIf="!isEmptyTasksList">#{{countedTaskNumber}}</span></h2>
+    </div>
+    <div class="b-comments__list" *ngIf="!isEmptyTasksList">
+      <app-comments-list [list]="list"></app-comments-list>
+    </div>
+    <div class="b-comments__form" *ngIf="!isEmptyTasksList">
+      <app-comments-form-adding  (submitAction)="addItem($event[0], $event[1])"></app-comments-form-adding>
+    </div>
+  </div>
+</div>

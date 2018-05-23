@@ -1,0 +1,25 @@
+/* panel */
+
+.l-panel {
+	padding: 23px 25px;
+	min-height: 100vh;
+	box-sizing: border-box;
+}
+
+.b-panel {
+
+	&__title {
+		margin: 0 0 5px;
+		padding: 0;
+		color: $color-2;
+    font-size: 38px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1;
+	}
+
+	&__text {
+		color: $color-3;
+    font-size: 19px;
+	}
+}

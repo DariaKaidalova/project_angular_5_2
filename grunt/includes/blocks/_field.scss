@@ -1,0 +1,28 @@
+/* field */
+
+.b-field {
+	width: 290px;
+	height: 40px;
+	display: inline-block;
+	box-sizing: border-box;
+  padding: 2px 9px;
+  outline: 0;
+	border: 2px solid #f3f3f3;
+	border-radius: 4px;
+  font: normal 16px/1 'Roboto', sans-serif;
+	
+	@include placeholder {
+		color: $color-6;
+		font-size: 16px;
+	}
+
+	&.-type_textarea {
+    width: 335px;
+    height: 66px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	}
+}
+
+
+

@@ -1,0 +1,20 @@
+/* columns */
+
+.l-columns {
+	min-height: 100vh;
+}
+
+.b-columns {
+	display: flex;
+
+	&__left {
+		width: 270px;
+		background: $bg-color-10;
+	}
+
+	&__right {
+    padding: 35px 30px;
+    width: calc(100% - 270px);
+    box-sizing: border-box;
+	}
+}

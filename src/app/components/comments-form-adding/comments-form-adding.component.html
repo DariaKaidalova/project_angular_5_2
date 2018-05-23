@@ -1,0 +1,15 @@
+<div class="l-commentFormAdding">
+  <form class="b-commentFormAdding" [formGroup]="commentAddingGroup" (ngSubmit)="onSubmit(commentAddingGroup)">
+    <div class="b-commentFormAdding__item -type_avatar">
+      <div class="b-avatar"></div>
+    </div>
+    <div class="b-commentFormAdding__item">
+      <textarea 
+      	class="b-field -type_textarea" 
+        [placeholder]="'Type comment here...'"
+        id="itemText"
+        formControlName="itemText"
+      	(keyup)="onSubmit($event, commentText)"></textarea>
+    </div>
+  </form>
+</div>

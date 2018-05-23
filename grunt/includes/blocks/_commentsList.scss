@@ -1,0 +1,33 @@
+/* comments list */
+
+.l-commentsList {}
+
+.b-commentsList {
+	
+	&__item {
+		@extend .g-clearfix;
+		padding: 10px 0 20px;
+		border-bottom: 1px solid $bg-color-5;
+
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+
+
+	&__image {
+		float: left;
+    margin: 0 15px 0 0;
+	}
+
+	&__text {
+    margin: -2px 0 0;
+		overflow: hidden;
+    font: 12px/1.5 'Open Sans';
+    color: $color-8;
+	}
+	
+}
+
+
+

@@ -1,0 +1,15 @@
+/* message */
+
+.b-message {
+	margin: 5px 0;
+	color: #6a6d7a;
+  text-align: center;
+  font-size: 13px;
+
+  &.-type_error {
+  	color: $color-7;
+  } 
+}
+
+
+

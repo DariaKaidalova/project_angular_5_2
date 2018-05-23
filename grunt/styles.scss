@@ -1,0 +1,43 @@
+/*plugins*/
+
+/* common styles */ 
+@import "includes/reset.scss";
+@import "includes/fonts.scss";
+@import "includes/variables.scss";
+@import "includes/global.scss";
+
+/* styles of top blocks */
+.l-html {}
+
+.l-body {
+	background: $bg-color-main;
+	color: $color-main;
+	font: normal 14px/1.3 'Roboto', sans-serif;
+}
+
+.l-wrapper {}
+
+/*styles of blocks*/
+@import "includes/blocks/content.scss";
+@import "includes/blocks/columns.scss";
+@import "includes/blocks/panel.scss";
+@import "includes/blocks/comments.scss";
+@import "includes/blocks/tasks.scss";
+
+/*styles of lists*/
+@import "includes/blocks/list.scss";
+@import "includes/blocks/tasksList.scss";
+@import "includes/blocks/commentsList.scss";
+
+/* styles of forms*/
+@import "includes/blocks/taskFormAdding.scss";
+@import "includes/blocks/commentFormAdding.scss";
+
+/* styles of small objects */
+@import "includes/blocks/button.scss";
+@import "includes/blocks/field.scss";
+@import "includes/blocks/title.scss";
+@import "includes/blocks/avatar.scss";
+@import "includes/blocks/message.scss";
+
+

@@ -1,0 +1,23 @@
+/* task form */
+
+.l-taskFormAdding {
+	padding: 0 5px;
+}
+
+.b-taskFormAdding {
+	
+	&__inner {
+		display: flex;
+	}
+
+	&__item {
+    margin: 0 12px 0 0;
+
+    &:last-child {
+    	margin-right: 0;
+    }
+	}
+}
+
+
+

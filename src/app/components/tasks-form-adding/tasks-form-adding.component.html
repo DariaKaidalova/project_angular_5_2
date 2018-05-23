@@ -1,0 +1,18 @@
+<div class="l-taskFormAdding">
+  <form class="b-taskFormAdding" [formGroup]="taskAddingGroup" (ngSubmit)="onSubmit(taskAddingGroup)">
+    <div class="b-taskFormAdding__inner">
+      <div class="b-taskFormAdding__item">
+        <input 
+          type="text" 
+          class="b-field" 
+          [placeholder]="'Type name here...'"
+          id="itemName"
+          formControlName="itemName">
+      </div>
+      <div class="b-taskFormAdding__item">
+        <button class="b-button -type_green" (click)="onSubmit($event, taskName)" [disabled]="!taskAddingGroup.valid">Add new</button>
+      </div>
+    </div>
+    <div class="b-message -type_error" *ngIf="isNotUniqueName">{{ messages.repeatedName }}</div>
+  </form>
+</div>

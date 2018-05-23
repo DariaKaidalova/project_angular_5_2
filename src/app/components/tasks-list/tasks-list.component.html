@@ -1,0 +1,12 @@
+<div class="l-tasksList">
+    <ul class="b-tasksList">
+      <li class="b-tasksList__item" *ngFor="let item of list" [ngClass]="{ '-state_active' : activeId == item.id }">
+        <div class="b-tasksList__task" (click)="activeItem(item.id)">
+          <span class="b-tasksList__taskText">{{item.name  | cropText : 30 : '...'}}</span><span class="b-tasksList__taskComments">{{item.commentsList.length}}</span>
+        </div>
+        <div class="b-tasksList__btn">
+          <a class="b-button" (click)="deleteItem(item.id)">Delete</a>
+        </div>
+      </li>
+    </ul>
+</div>

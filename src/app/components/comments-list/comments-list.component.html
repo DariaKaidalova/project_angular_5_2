@@ -1,0 +1,11 @@
+<div class="l-commentsList">
+	<ul class="b-commentsList" *ngIf="list.length > 0">
+	  <li class="b-commentsList__item" *ngFor="let item of list">
+	    <div class="b-commentsList__image">
+	      <div class="b-avatar"></div>
+	    </div>
+	    <div class="b-commentsList__text">{{item.text}}</div>
+	  </li>
+	</ul>
+	<div class="b-message" *ngIf="list.length == 0">There are no comments</div>
+</div>
