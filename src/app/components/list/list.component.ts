@@ -10,7 +10,7 @@ import { Comment } from '../../interfaces/comment.interface';
 })
 export class ListComponent implements OnInit {
 
-  constructor(private _storageService: StorageService) { }
+  constructor(public _storageService: StorageService) { }
 
   ngOnInit() {
 
